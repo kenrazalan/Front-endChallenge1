@@ -1,0 +1,80 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.group {
+  height: 752px;
+  width: 387px;
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+.steps {
+  height: 72px;
+  width: 387px;
+  
+}
+.sacola {
+  height: 16px;
+  width: 61px;
+  color: #FF7800;
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 16px;
+  text-align: center;
+}
+.pagamento {
+  height: 16px;
+  width: 89px;
+  color: #CCC;
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 16px;
+  text-align: center;
+}
+.confirmacao {
+  height: 16px;
+  width: 101px;
+  color: #CCC;
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 16px;
+  text-align: center;
+}
+
+.produtos {
+  height: 347px;
+  width: 341px;
+ 
+}
+.total {
+  height: 129px;
+  width: 341px;
+
+}
+.extra-large {
+  height: 60px;
+  width: 341px;
+  
+}
+.fundo {
+  height: 720px;
+  width: 360px;
+
+
+
+}
