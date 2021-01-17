@@ -11,22 +11,20 @@
 .group {
   height: 752px;
   width: 387px;
-  
+  background-color: aqua;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-
 }
 .steps {
   height: 72px;
   width: 387px;
-  
 }
 .sacola {
   height: 16px;
   width: 61px;
-  color: #FF7800;
-  font-family: "Helvetica Neue";
+  color: #ff7800;
+  font-family: 'Helvetica Neue';
   font-size: 13px;
   font-weight: 700;
   letter-spacing: NaNpx;
@@ -36,8 +34,8 @@
 .pagamento {
   height: 16px;
   width: 89px;
-  color: #CCC;
-  font-family: "Helvetica Neue";
+  color: #ccc;
+  font-family: 'Helvetica Neue';
   font-size: 13px;
   font-weight: 700;
   letter-spacing: NaNpx;
@@ -47,8 +45,8 @@
 .confirmacao {
   height: 16px;
   width: 101px;
-  color: #CCC;
-  font-family: "Helvetica Neue";
+  color: #ccc;
+  font-family: 'Helvetica Neue';
   font-size: 13px;
   font-weight: 700;
   letter-spacing: NaNpx;
@@ -59,22 +57,17 @@
 .produtos {
   height: 347px;
   width: 341px;
- 
 }
 .total {
   height: 129px;
   width: 341px;
-
 }
 .extra-large {
   height: 60px;
   width: 341px;
-  
 }
 .fundo {
   height: 720px;
   width: 360px;
-
-
-
+  background-color: #ff7800;
 }
