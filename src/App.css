@@ -19,7 +19,7 @@
 .fundo {
   height: 720px;
   width: 360px;
-  background-color: #EEE;
+  background-color: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .produtos {
   height: 347px;
@@ -43,7 +43,7 @@
   align-items: center;
   margin: 15px 0;
 }
-.products{
+.products {
   width: 316px;
   height: 90px;
   margin-bottom: 15px;
@@ -52,32 +52,30 @@
   display: flex;
   justify-content: center;
 }
-.products-details{
+.products-details {
   display: flex;
   align-items: center;
   width: 300px;
   height: 70px;
-  
 }
-.products-label{
+.products-label {
   font-size: 14px;
   font-weight: bold;
 }
-.item{
+.item {
   width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.item-description{
+.item-description {
   font-size: 12px;
   margin-left: 20px;
 }
-.price-description{
-
+.price-description {
 }
-.price{
+.price {
   font-size: 14px;
   text-align: end;
 }
@@ -97,34 +95,37 @@
   border: 1px solid gray;
   display: flex;
   justify-content: space-between;
-  
+
   align-items: center;
 }
 
-.total-details{
+.total-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 14px;
   height: 100px;
-
 }
-.total-value{
+.total-value {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 14px;
   height: 100px;
-
 }
-.subtotal, .shipping-total, .total-total, .discount{
+.subtotal,
+.shipping-total,
+.total-total,
+.discount {
   font-size: 14px;
 }
-.subtotal-value, .shipping-total-value, .total-total-value, .discount-value{
+.subtotal-value,
+.shipping-total-value,
+.total-total-value,
+.discount-value {
   font-size: 14px;
 }
-.payment-button{
-
+.payment-button {
 }
 
 .cart {
@@ -160,6 +161,3 @@
   line-height: 16px;
   text-align: center;
 }
-
-
-
