@@ -6,21 +6,128 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
-.group {
+/* .group {
   height: 752px;
   width: 387px;
   background-color: aqua;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+} */
+.fundo {
+  height: 720px;
+  width: 360px;
+  background-color: #EEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .steps {
-  height: 72px;
-  width: 387px;
+  height: 40px;
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
 }
-.sacola {
+.produtos {
+  height: 347px;
+  width: 341px;
+  display: flex;
+  border: 1px solid gray;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.products{
+  width: 316px;
+  height: 90px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.products-details{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 70px;
+  
+}
+.products-label{
+  font-size: 14px;
+  font-weight: bold;
+}
+.item{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-description{
+  font-size: 12px;
+  margin-left: 20px;
+}
+.price-description{
+
+}
+.price{
+  font-size: 14px;
+  text-align: end;
+}
+.extra-large {
+  height: 60px;
+  width: 341px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total {
+  height: 129px;
+  width: 341px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+}
+
+.total-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 14px;
+  height: 100px;
+
+}
+.total-value{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 14px;
+  height: 100px;
+
+}
+.subtotal, .shipping-total, .total-total, .discount{
+  font-size: 14px;
+}
+.subtotal-value, .shipping-total-value, .total-total-value, .discount-value{
+  font-size: 14px;
+}
+.payment-button{
+
+}
+
+.cart {
   height: 16px;
   width: 61px;
   color: #ff7800;
@@ -31,7 +138,7 @@
   line-height: 16px;
   text-align: center;
 }
-.pagamento {
+.payment {
   height: 16px;
   width: 89px;
   color: #ccc;
@@ -42,7 +149,7 @@
   line-height: 16px;
   text-align: center;
 }
-.confirmacao {
+.confirmation {
   height: 16px;
   width: 101px;
   color: #ccc;
@@ -54,20 +161,5 @@
   text-align: center;
 }
 
-.produtos {
-  height: 347px;
-  width: 341px;
-}
-.total {
-  height: 129px;
-  width: 341px;
-}
-.extra-large {
-  height: 60px;
-  width: 341px;
-}
-.fundo {
-  height: 720px;
-  width: 360px;
-  background-color: #ff7800;
-}
+
+
