@@ -32,6 +32,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
 }
 .produtos {
   height: 347px;
@@ -42,6 +43,9 @@
   justify-content: center;
   align-items: center;
   margin: 15px 0;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+  background-color: #FFF;
 }
 .products {
   width: 316px;
@@ -51,6 +55,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius: 3px;
 }
 .products-details {
   display: flex;
@@ -92,10 +97,10 @@
 .total {
   height: 129px;
   width: 341px;
-  border: 1px solid gray;
+  border: 1px solid #CCC;
   display: flex;
   justify-content: space-between;
-
+  border-radius: 3px;
   align-items: center;
 }
 
@@ -160,4 +165,181 @@
   letter-spacing: NaNpx;
   line-height: 16px;
   text-align: center;
+}
+
+
+.cart-cart {
+  height: 16px;
+  width: 61px;
+  color: #ccc;
+  font-family: 'Helvetica Neue';
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 16px;
+  text-align: center;
+}
+.payment-payment {
+  height: 16px;
+  width: 89px;
+  color: #ff7800;
+  font-family: 'Helvetica Neue';
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 16px;
+  text-align: center;
+}
+.confirmation-confirmation {
+  height: 16px;
+  width: 101px;
+  color: #ccc;
+  font-family: 'Helvetica Neue';
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 16px;
+  text-align: center;
+}
+
+.credit-card{
+  height: 17px;
+  width: 319px;
+  color: #999;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 17px;
+}
+.credit-card-box{
+  height: 279px;
+  width: 340px;
+  border-radius: 3px;
+  background-color: #FFF;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.credit-card-margin{
+  height: 250px;
+  width: 320px;
+  
+}
+.card-number-label{
+  height: 14px;
+  width: 129.71px;
+  color: #CCC;
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 14px;
+}
+.card-number-box{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 45px;
+  width: 320px;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px solid #E7E7E7;
+  box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+.card-number-box-label{
+  margin-left: 15px;
+  height: 19px;
+  width: 219px;
+  color: #E0E7EE;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  letter-spacing: 1.37px;
+  line-height: 19px;
+}
+.field-1{
+  height: 64px;
+  width: 320px;
+ 
+}
+.field-3{
+  height: 64px;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.field-4{
+  height: 64px;
+  width: 160px;
+  
+}
+.field-5{
+  height: 64px;
+  width: 145px;
+ 
+}
+.validity-label{
+  height: 14px;
+  width: 158px;
+  color: #CCC;
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 14px;
+}
+.validity-box{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 45px;
+  width: 160px;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px solid #E7E7E7;
+  box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+.validity-box-label{
+  margin-left: 15px;
+  height: 19px;
+  width: 219px;
+  color: #E0E7EE;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  letter-spacing: 1.37px;
+  line-height: 19px;
+}
+.CVV-label{
+  height: 14px;
+  width: 138px;
+  color: #CCC;
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 14px;
+}
+.CVV-box-label{
+  margin-left: 15px;
+  height: 19px;
+  width: 219px;
+  color: #E0E7EE;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  letter-spacing: 1.37px;
+  line-height: 19px;
+}
+.CVV-box{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 45px;
+  width: 140px;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px solid #E7E7E7;
+  box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.2);
 }
