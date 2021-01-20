@@ -3,6 +3,8 @@ import axios from 'axios'
 import Total from './Total'
 import Cart from './Cart'
 import Payment from './Payment'
+import Confirmation from './Confirmation/Confirmation'
+import {Link,BrowserRouter as Router,Route, Switch,useHistory} from 'react-router-dom'
 
 const Main = () => {
 
@@ -31,10 +33,25 @@ const Main = () => {
     },[])
 
     return (
+      <>
+        <Router>
         <div className="App">
+          <Switch>
+           <Route exact path="/">
+            <Cart  total={total} datas={datas}/>
+          </Route> 
+          <Route exact path="/confirmation">
+            <Confirmation total={total} datas={datas}/>
+          </Route>
+          <Route exact path ="/payment">
             <Payment total={total} datas={datas}/>
+          </Route>
+          </Switch>  
+          
+            
         </div>
-
+        </Router>
+        </>
     )
 } 
 

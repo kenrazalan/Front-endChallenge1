@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import {useHistory} from 'react-router-dom'
 import Total from './Total'
 
 
 
 const Cart = ({total,datas}) =>{
-  
+  const history = useHistory();
+  const handleClick = ()=>{
+    history.push('/payment')
+  }
   return (
    
       <div className="fundo">
@@ -35,7 +39,7 @@ const Cart = ({total,datas}) =>{
          <Total total={total}/>
 
         <div className="extra-large">
-          <p className="payment-button"><b>Go to Payment</b></p>
+          <p onClick={handleClick} className="payment-button"><b>Go to Payment</b></p>
         </div>
       </div>
   

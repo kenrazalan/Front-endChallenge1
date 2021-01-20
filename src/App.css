@@ -1,5 +1,5 @@
 .App {
-  background-color: #282c34;
+  background: linear-gradient(20deg, rgb(33, 33, 33), rgb(66, 66, 66));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -130,8 +130,7 @@
 .discount-value {
   font-size: 14px;
 }
-.payment-button {
-}
+
 
 .cart {
   height: 16px;

@@ -1,7 +1,13 @@
 import React from 'react'
 import Total from './Total'
+import {useHistory} from 'react-router-dom'
 
 const Payment = ({total}) =>{
+
+    const history = useHistory();
+    const handleClick = ()=>{
+      history.push('/confirmation')
+    }
 return(
 <div className="App">
       <div className="fundo">
@@ -25,7 +31,7 @@ return(
                 </div>
                 <div className="field-3">
                    <div className="field-4">
-                       <p className="validity-label">Validity(months/year)</p>
+                       <p className="validity-label">Validity(month/year)</p>
                        <div className="validity-box">
                            <div className="validity-box-label">__/____</div>
                        </div>
@@ -44,7 +50,7 @@ return(
          <Total total={total}/>
          
         <div className="extra-large">
-          <p className="payment-button"><b>Finalize the order</b></p>
+          <p onClick={handleClick} className="payment-button"><b>Finalize the order</b></p>
         </div>
       </div>
     </div>
