@@ -76,7 +76,7 @@ const Wrapper = styled.div`
       .produtos{
           margin-top : 30px;
       }
-    }
+    
 `
 
 const Confirmation = ({datas,total})=>{
