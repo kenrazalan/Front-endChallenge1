@@ -49,9 +49,9 @@ return(
 
          <Total total={total}/>
          
-        <div className="extra-large">
-          <p onClick={handleClick} className="payment-button"><b>Finalize the order</b></p>
-        </div>
+        <button onClick={handleClick} className="extra-large">
+          <p className="payment-button"><b>Finalize the order</b></p>
+        </button>
       </div>
     </div>
 )}

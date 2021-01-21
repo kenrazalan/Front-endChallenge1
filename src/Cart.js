@@ -38,9 +38,9 @@ const Cart = ({total,datas}) =>{
         </div>
          <Total total={total}/>
 
-        <div className="extra-large">
-          <p onClick={handleClick} className="payment-button"><b>Go to Payment</b></p>
-        </div>
+        <button onClick={handleClick} className="extra-large">
+          <p className="payment-button"><b>Go to Payment</b></p>
+        </button>
       </div>
   
   )
