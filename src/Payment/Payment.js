@@ -19,7 +19,7 @@ return(
           <p className="confirmation-confirmation">Confirmation</p>
         </div> */}
         <Nav/>
-        <p className="credit-card">Credit Card</p>
+        <p className="credit-card"><b>Credit Card</b></p>
         <div className="credit-card-box">
             <div className="credit-card-margin">
                 <div className="field-1">
@@ -63,7 +63,7 @@ return(
          <Total total={total}/>
          
         <button onClick={handleClick} className="extra-large">
-          <p className="payment-button"><b>Finalize the order</b></p>
+          <p className="payment-button">Finalize the order</p>
         </button>
       </div>
     </div>

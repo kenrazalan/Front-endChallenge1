@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.steps {
+/* .steps {
   height: 40px;
   width: 360px;
   display: flex;
@@ -26,12 +26,12 @@
   align-items: center;
   background-color: #fff;
   box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
-}
+} */
 .produtos {
   height: 347px;
   width: 341px;
   display: flex;
-  border: 1px solid gray;
+  border: 1px solid #ccc;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@
   width: 316px;
   height: 90px;
   margin-bottom: 15px;
-  border: 1px solid gray;
+  border: 1px solid #ccc;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -90,6 +90,7 @@
 .total {
   height: 129px;
   width: 341px;
+  background-color: #fff;
   border: 1px solid #CCC;
   display: flex;
   justify-content: space-between;

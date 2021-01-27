@@ -1,4 +1,4 @@
-.cart-cart {
+/* .cart-cart {
     height: 16px;
     width: 61px;
     color: #ccc;
@@ -30,12 +30,15 @@
     letter-spacing: NaNpx;
     line-height: 16px;
     text-align: center;
+  } */
+  .payment-button{
+    font-weight: 700;
+    font-size: 20px;
   }
-
   .credit-card{
     height: 17px;
     width: 319px;
-    color: #999;
+    color:#999;
     font-family: "Helvetica Neue";
     font-size: 14px;
     font-weight: 700;
@@ -45,6 +48,7 @@
   .credit-card-box{
     height: 279px;
     width: 340px;
+    border: 1px solid #CCC;
     border-radius: 3px;
     background-color: #FFF;
     box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
@@ -62,7 +66,7 @@
   .card-number-label{
     height: 14px;
     width: 129.71px;
-    color: #CCC;
+    color: #999;
     font-family: "Helvetica Neue";
     font-size: 12px;
     font-weight: 700;
@@ -132,7 +136,7 @@
   .validity-label{
     height: 14px;
     width: 158px;
-    color: #CCC;
+    color: #999;
     font-family: "Helvetica Neue";
     font-size: 12px;
     font-weight: 700;
@@ -178,7 +182,7 @@
   .CVV-label{
     height: 14px;
     width: 138px;
-    color: #CCC;
+    color: #999;
     font-family: "Helvetica Neue";
     font-size: 12px;
     font-weight: 700;

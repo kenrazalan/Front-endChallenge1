@@ -51,10 +51,9 @@
     height: 103px;
 }
 .pagamento-label{
-    
+    text-align: center;
     font-weight: bold;
     height: 16px;
-    width: 219px;
     color: #999;
     font-family: "Helvetica Neue";
     font-size: 16px;
@@ -64,11 +63,11 @@
 .pagamento-box{
     height: 73px;
     width: 340px;
+    border: 1px solid #CCC;
     border-radius: 3px;
-    border: 1px solid gray;
     background-color: #FFF;
     box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
   }
-  .produtos{
-      margin-top : 30px;
+  .produtos {
+      margin-top: 30px;
   }
