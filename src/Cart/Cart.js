@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import './Cart.css'
 import axios from 'axios'
 import {useHistory} from 'react-router-dom'
 import Total from '../Total/Total'
-import './Cart.css'
+import Nav from'../Nav/Nav'
+
 
 
 const Cart = ({total,datas}) =>{
@@ -13,11 +15,12 @@ const Cart = ({total,datas}) =>{
   return (
    
       <div className="fundo">
-        <div className="steps">
+        {/* <div className="steps">
           <p className="cart">Cart</p>
           <p className="payment">Payment</p>
           <p className="confirmation">Confirmation</p>
-        </div>
+        </div> */}
+        <Nav/>
         <div className="produtos">
           <div className="products-label">Products</div>
           {datas.map(data=>{

@@ -2,7 +2,7 @@ import React from 'react'
 // import styled from 'styled-components'
 import Total from '../Total/Total'
 import './Confirmation.css'
-
+import Nav from '../Nav/Nav'
 // const Wrapper = styled.div`
     
 // `
@@ -11,11 +11,12 @@ const Confirmation = ({datas,total})=>{
     return(
      
         <div className="fundo">
-            <div className="steps">
+            {/* <div className="steps">
                 <p className="cart-conf">Cart</p>
                 <p className="payment-conf">Payment</p>
                 <p className="confirmation-conf">Confirmation</p>
-            </div>
+            </div> */}
+            <Nav/>
             <div className="success-label">
                     <p className="success-label-label">Success</p>
             </div>

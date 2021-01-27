@@ -3,12 +3,12 @@
     height: 40px;
     width: 360px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     align-items: center;
     background-color: #fff;
     box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
   }
-.cart{
+ /*.cart{
     height: 16px;
     width: 61px;
     color: #ccc;
@@ -20,6 +20,7 @@
     text-align: center;
     
 }
+
 .payment{
     height: 16px;
     width: 89px;
@@ -34,11 +35,24 @@
 .confirmation{
     height: 16px;
     width: 101px;
-    color: #ff7800;
+    color: red;
     font-family: 'Helvetica Neue';
     font-size: 13px;
     font-weight: 700;
     letter-spacing: NaNpx;
     line-height: 16px;
     text-align: center;
+} */
+
+.navlink{
+    height: 16px;
+    width: 82px;
+    color: #ccc;
+    font-family: 'Helvetica Neue';
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: NaNpx;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
 }

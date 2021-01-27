@@ -2,6 +2,7 @@ import React from 'react'
 import Total from '../Total/Total'
 import {useHistory} from 'react-router-dom'
 import './Payment.css'
+import Nav from '../Nav/Nav'
 
 const Payment = ({total}) =>{
 
@@ -12,11 +13,12 @@ const Payment = ({total}) =>{
 return(
 <div className="App">
       <div className="fundo">
-        <div className="steps">
+        {/* <div className="steps">
           <p className="cart-cart">Cart</p>
           <p className="payment-payment">Payment</p>
           <p className="confirmation-confirmation">Confirmation</p>
-        </div>
+        </div> */}
+        <Nav/>
         <p className="credit-card">Credit Card</p>
         <div className="credit-card-box">
             <div className="credit-card-margin">
