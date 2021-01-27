@@ -49,9 +49,12 @@
 .pagamento{
     width: 340px;
     height: 103px;
+    
 }
 .pagamento-label{
+    margin-bottom: 5px;
     text-align: center;
+    
     font-weight: bold;
     height: 16px;
     color: #999;
@@ -66,7 +69,7 @@
     border: 1px solid #CCC;
     border-radius: 3px;
     background-color: #FFF;
-    box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
+    /* box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22); */
   }
   .produtos {
       margin-top: 30px;
