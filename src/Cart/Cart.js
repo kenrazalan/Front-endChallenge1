@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import {useHistory} from 'react-router-dom'
-import Total from './Total'
-
+import Total from '../Total/Total'
+import './Cart.css'
 
 
 const Cart = ({total,datas}) =>{

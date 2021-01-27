@@ -1,6 +1,7 @@
 import React from 'react'
-import Total from './Total'
+import Total from '../Total/Total'
 import {useHistory} from 'react-router-dom'
+import './Payment.css'
 
 const Payment = ({total}) =>{
 
@@ -21,26 +22,36 @@ return(
             <div className="credit-card-margin">
                 <div className="field-1">
                     <p className="card-number-label">Card Number</p>
-                    <div className="card-number-box">
-                        <div className="card-number-box-label">____.____.____.____</div>
+                    <input type="tel" 
+                           inputMode="numeric"
+                           maxLength="19"
+                           pattern="[0-9\s]{13,19}"
+                           autoComplete="cc-number"
+                           className="card-number-input"
+                           placeholder="____-____-____-____"/>
                     </div>
-                </div>
                 <div className="field-2">
                     <p className="card-number-label">Cardholder Name</p>
-                    <div className="card-number-box"></div>
+                    <input type="text"
+                         className="card-number-input"/>
                 </div>
                 <div className="field-3">
                    <div className="field-4">
                        <p className="validity-label">Validity(month/year)</p>
-                       <div className="validity-box">
-                           <div className="validity-box-label">__/____</div>
-                       </div>
+                        <input type="tel" 
+                           inputMode="numeric"
+                           className="validity-input"
+                           placeholder="xx/xx"
+                           maxLength="5"/>
                    </div>
                    <div className="field-5">
                        <p className="CVV-label">CVV</p>
-                       <div className="CVV-box">
-                       <div className="CVV-box-label">____</div>
-                       </div>
+                        <input 
+                           type="tel" 
+                           inputMode="numeric"
+                           className="CVV-input"
+                           placeholder="xx/xx"
+                           maxLength="5"/>
                    </div>
                 </div>
             </div>

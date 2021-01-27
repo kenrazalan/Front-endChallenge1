@@ -1,87 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
-import Total from './../Total'
+// import styled from 'styled-components'
+import Total from '../Total/Total'
+import './Confirmation.css'
 
-const Wrapper = styled.div`
-    .cart-conf{
-        height: 16px;
-        width: 61px;
-        color: #ccc;
-        font-family: 'Helvetica Neue';
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: NaNpx;
-        line-height: 16px;
-        text-align: center;
-        
-    }
-    .payment-conf{
-        height: 16px;
-        width: 89px;
-        color: #ccc;
-        font-family: 'Helvetica Neue';
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: NaNpx;
-        line-height: 16px;
-        text-align: center;
-    }
-    .confirmation-conf{
-        height: 16px;
-        width: 101px;
-        color: #ff7800;
-        font-family: 'Helvetica Neue';
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: NaNpx;
-        line-height: 16px;
-        text-align: center;
-    }
-    .success-label{
-        width: 266px;
-        height: 40px;
-      
-    }
-    .success-label-label{
-        color: green;
-        font-family: 'Helvetica Neue';
-        font-size: 19px;
-        font-weight: bold;
-        letter-spacing: NaNpx;
-        line-height: 16px;
-        text-align: center;
-    }
-    .pagamento{
-        width: 340px;
-        height: 103px;
-    }
-    .pagamento-label{
-        
-        font-weight: bold;
-        height: 16px;
-        width: 219px;
-        color: #999;
-        font-family: "Helvetica Neue";
-        font-size: 16px;
-        letter-spacing: 1.37px;
-        line-height: 19px;
-    }
-    .pagamento-box{
-        height: 73px;
-        width: 340px;
-        border-radius: 3px;
-        background-color: #FFF;
-        box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22);
-      }
-      .produtos{
-          margin-top : 30px;
-      }
+// const Wrapper = styled.div`
     
-`
+// `
 
 const Confirmation = ({datas,total})=>{
     return(
-        <Wrapper>
+     
         <div className="fundo">
             <div className="steps">
                 <p className="cart-conf">Cart</p>
@@ -117,7 +45,6 @@ const Confirmation = ({datas,total})=>{
         <Total total={total}/>
 
         </div>
-        </Wrapper>
     )
 }
 
