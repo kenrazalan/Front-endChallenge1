@@ -1,15 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Total from '../Total/Total'
 import {useHistory} from 'react-router-dom'
 import './Payment.css'
 import Nav from '../Nav/Nav'
 
 const Payment = ({total}) =>{
+    const [cardNumber,setCardNumber] = useState("")
+    const [cardName,setCardName] = useState("")
+    const [cardValidation,setValidation] = useState("")
+    const [cardCVV,setCardCVV] = useState("")
+    
+    
 
     const history = useHistory();
+    const handleChange =(e)=>{
+      setCardNumber(e.target.value)
+    }
+    const handleChangeValidation =(e)=>{
+      setValidation(e.target.value)
+    }
+    const handleChangeName =(e)=>{
+      setCardName(e.target.value)
+    }
+    const handleChangeCVV =(e)=>{
+      setCardCVV(e.target.value)
+    }
     const handleClick = ()=>{
       history.push('/confirmation')
     }
+
 return(
 <div className="App">
       <div className="fundo">
@@ -20,11 +39,15 @@ return(
         </div> */}
         <Nav/>
         <p className="credit-card"><b>Credit Card</b></p>
+        <form >
         <div className="credit-card-box">
             <div className="credit-card-margin">
                 <div className="field-1">
                     <p className="card-number-label">Card Number</p>
-                    <input type="tel" 
+                    <input name="number"
+                           type="tel" 
+                           value={cardNumber}
+                           onChange={handleChange}
                            inputMode="numeric"
                            maxLength="19"
                            pattern="[0-9\s]{13,19}"
@@ -34,13 +57,19 @@ return(
                     </div>
                 <div className="field-2">
                     <p className="card-number-label">Cardholder Name</p>
-                    <input type="text"
-                         className="card-number-input"/>
+                    <input name="name"
+                           type="text"
+                           className="card-number-input"
+                           value={cardName}
+                           onChange={handleChangeName}/>
                 </div>
                 <div className="field-3">
                    <div className="field-4">
                        <p className="validity-label">Validity(month/year)</p>
                         <input type="tel" 
+                           name="validity"
+                           value={cardValidation}  
+                           onChange={handleChangeValidation}
                            inputMode="numeric"
                            className="validity-input"
                            placeholder="xx/xx"
@@ -49,6 +78,9 @@ return(
                    <div className="field-5">
                        <p className="CVV-label">CVV</p>
                         <input 
+                           name="cvv"
+                           value={cardCVV}
+                           onChange={handleChangeCVV}
                            type="tel" 
                            inputMode="numeric"
                            className="CVV-input"
@@ -59,12 +91,13 @@ return(
             </div>
 
         </div>
-
+        
          <Total total={total}/>
          
         <button onClick={handleClick} className="extra-large">
           <p className="payment-button">Finalize the order</p>
         </button>
+        </form>
       </div>
     </div>
 )}
