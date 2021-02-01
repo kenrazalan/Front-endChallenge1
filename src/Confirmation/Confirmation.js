@@ -7,7 +7,7 @@ import Nav from '../Nav/Nav'
     
 // `
 
-const Confirmation = ({datas,total})=>{
+const Confirmation = ({datas,total,details})=>{
     return(
      
         <div className="fundo">
@@ -22,7 +22,10 @@ const Confirmation = ({datas,total})=>{
             </div>
             <div className="pagamento">
                 <p className="pagamento-label">Payment</p>
-                <div className="pagamento-box"></div>
+                <div className="pagamento-box">
+                  <p className="confirmation-details"><span>Card Number: </span>{details.cardNumber}</p>
+                  <p className="confirmation-details"><span>Card Name: </span>{details.cardName}</p>
+                </div>
             </div>
 
             <div className="produtos">
