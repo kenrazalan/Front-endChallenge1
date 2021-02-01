@@ -8,8 +8,10 @@ import Nav from '../Nav/Nav'
 // `
 
 const Confirmation = ({datas,total,details})=>{
+    const transaction = JSON.parse(localStorage.getItem('details'))
+    console.log(transaction)
     return(
-     
+      
         <div className="fundo">
             {/* <div className="steps">
                 <p className="cart-conf">Cart</p>
@@ -23,8 +25,8 @@ const Confirmation = ({datas,total,details})=>{
             <div className="pagamento">
                 <p className="pagamento-label">Payment</p>
                 <div className="pagamento-box">
-                  <p className="confirmation-details"><span>Card Number: </span>{details.cardNumber}</p>
-                  <p className="confirmation-details"><span>Card Name: </span>{details.cardName}</p>
+                  <p className="confirmation-details"><span>Card Number: </span>{transaction.cardNumber}</p>
+                  <p className="confirmation-details"><span>Card Name: </span>{transaction.cardName}</p>
                 </div>
             </div>
 
