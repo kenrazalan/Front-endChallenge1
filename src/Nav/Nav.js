@@ -11,9 +11,9 @@ const Nav = ()=>{
             <NavLink activeStyle={{color:"#ff7800"}} className="navlink" exact to="/payment">
                 Payment
             </NavLink>
-            <NavLink activeStyle={{color:"#ff7800"}} className="navlink" exact to="/confirmation">
+            <Link activeStyle={{color:"#ff7800"}} className="navlink" >
                 Confirmation
-            </NavLink>
+            </Link>
             
         </div>
     )

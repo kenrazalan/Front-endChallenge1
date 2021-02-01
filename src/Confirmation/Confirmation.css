@@ -71,6 +71,13 @@
     background-color: #FFF;
     /* box-shadow: 1px 1px 5px 0 rgba(0,0,29,0.22); */
   }
+  .pagamento-box span{
+      font-weight: bold;
+  }
   .produtos {
       margin-top: 30px;
+  }
+  .confirmation-details{
+      font-size: 12px;
+      padding-left: 20px;
   }

@@ -230,3 +230,15 @@
       color: #E7E7E7;
       
   }
+  .error{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 10px 100px 10px 100px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+  }

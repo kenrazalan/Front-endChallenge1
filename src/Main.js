@@ -11,8 +11,17 @@ const Main = () => {
 
   const [datas, setData] = useState([])
   const [total, setTotal] = useState([])
-    console.log(datas)
-    console.log(total)
+  const [details,setDetails] = useState({
+    cardNumber:"",
+    cardName:"",
+    cardValidation:"",
+    cardCVV:""
+  })
+  useEffect(()=>{
+    localStorage.setItem("details",details)
+  },[details])
+
+
     useEffect(()=>{
         axios.get('https://www.mocky.io/v2/5b15c4923100004a006f3c07')
         .then((response) => {
@@ -44,10 +53,10 @@ const Main = () => {
             <Cart  total={total} datas={datas}/>
           </Route> 
           <Route exact path="/confirmation">
-            <Confirmation total={total} datas={datas}/>
+            <Confirmation total={total} datas={datas}details={details}/>
           </Route>
           <Route exact path ="/payment">
-            <Payment total={total} datas={datas}/>
+            <Payment total={total} datas={datas}  setDetails={setDetails}/>
           </Route>
          
           </Switch>  
