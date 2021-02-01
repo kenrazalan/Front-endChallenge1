@@ -11,15 +11,14 @@ const Main = () => {
 
   const [datas, setData] = useState([])
   const [total, setTotal] = useState([])
-  const [details,setDetails] = useState({
-    cardNumber:"",
-    cardName:"",
-    cardValidation:"",
-    cardCVV:""
-  })
-  useEffect(()=>{
-    localStorage.setItem("details",details)
-  },[details])
+  // const [details,setDetails] = useState({
+  //   cardNumber:"",
+  //   cardName:"",
+  //   cardValidation:"",
+  //   cardCVV:""
+  // })
+
+  
 
 
     useEffect(()=>{
@@ -53,10 +52,10 @@ const Main = () => {
             <Cart  total={total} datas={datas}/>
           </Route> 
           <Route exact path="/confirmation">
-            <Confirmation total={total} datas={datas}details={details}/>
+            <Confirmation total={total} datas={datas} />
           </Route>
           <Route exact path ="/payment">
-            <Payment total={total} datas={datas}  setDetails={setDetails}/>
+            <Payment total={total} datas={datas}  />
           </Route>
          
           </Switch>  

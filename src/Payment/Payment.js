@@ -4,7 +4,7 @@ import {useHistory} from 'react-router-dom'
 import './Payment.css'
 import Nav from '../Nav/Nav'
 
-const Payment = ({total,setDetails}) =>{
+const Payment = ({total}) =>{
     // const [cardNumber,setCardNumber] = useState("")
     // const [cardName,setCardName] = useState("")
     // const [cardValidation,setValidation] = useState("")
@@ -70,11 +70,11 @@ const Payment = ({total,setDetails}) =>{
     const handleSubmit = (e)=>{
         e.preventDefault();
         if (cardDetails.cardValidation && cardDetails.cardName && cardDetails.cardNumber && cardDetails.cardCVV){
-            setDetails({cardName:cardDetails.cardName,
-                        cardNumber:cardDetails.cardNumber,
-                        cardValidation: cardDetails.cardValidation,
-                        cardCVV:cardDetails.cardCVV})
-            
+            // setDetails({cardName:cardDetails.cardName,
+            //             cardNumber:cardDetails.cardNumber,
+            //             cardValidation: cardDetails.cardValidation,
+            //             cardCVV:cardDetails.cardCVV})
+            localStorage.setItem("details",JSON.stringify(cardDetails))
              history.push('/confirmation')
         }
            setShow(true)
